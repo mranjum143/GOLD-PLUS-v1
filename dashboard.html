@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { background-color: #1a0b2e; color: white; font-family: sans-serif; padding: 20px; }
+        .card { background: #2d1b4d; padding: 20px; border-radius: 15px; text-align: center; }
+        .popup { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #3d2b5d; padding: 30px; border-radius: 20px; border: 2px solid #ffcc00; text-align: center; z-index: 100; }
+        .btn-claim { background: #ffcc00; color: black; padding: 10px 20px; border-radius: 20px; border: none; font-weight: bold; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div id="rewardPopup" class="popup">
+        <h3>🎉 Welcome!</h3>
+        <p>Claim your Daily Reward</p>
+        <button class="btn-claim" onclick="claim()">Claim Rs. 50</button>
+    </div>
+
+    <div class="card">
+        <h2>Total Balance</h2>
+        <h1 id="bal">$0.00</h1>
+        <button class="btn-claim" onclick="location.href='deposit.html'">Deposit Now</button>
+    </div>
+
+    <script>
+        function claim() {
+            document.getElementById('bal').innerText = "Rs. 50.00";
+            document.getElementById('rewardPopup').style.display = 'none';
+            alert("Rs. 50 added to your account!");
+        }
+    </script>
+</body>
+</html>
