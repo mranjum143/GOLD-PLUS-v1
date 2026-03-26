@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { background-color: #1a0b2e; color: white; font-family: sans-serif; padding: 20px; }
+        .box { background: #2d1b4d; padding: 20px; border-radius: 15px; margin-bottom: 20px; }
+        .upload-btn { background: #ffcc00; color: black; padding: 15px; display: block; text-align: center; border-radius: 10px; cursor: pointer; margin-top: 10px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h2>Deposit via Easypaisa</h2>
+    <div class="box">
+        <p>Account Holder: <b>Ahmad Nafees Anjum</b></p>
+        <p>Number: <b>03037264598</b></p>
+    </div>
+    <div class="box">
+        <p>Upload Payment Screenshot:</p>
+        <input type="file" id="pic" accept="image/*" style="display:none;" onchange="alert('Photo Selected!')">
+        <label for="pic" class="upload-btn">Tap to Upload Photo</label>
+        <button class="upload-btn" style="width:100%; border:none; margin-top:20px; background:#4ade80;">Submit Request</button>
+    </div>
+</body>
+</html>
